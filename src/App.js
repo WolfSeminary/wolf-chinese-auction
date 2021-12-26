@@ -11,7 +11,6 @@ function App() {
           Edit <code>src/App.js</code> and save to reload. Deploy-work!
         </p>
       </header> }
-     
     </div>
   );
 }
