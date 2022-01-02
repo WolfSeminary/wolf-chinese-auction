@@ -8,7 +8,7 @@ import TitleAppBar from './AppBarw'
 function App() {
   return (
     <div className="App">
-
+<TitleAppBar/>
 <Checkbox/>   
     </div>
   );
