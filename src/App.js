@@ -1,14 +1,14 @@
 
-import { AppBar } from '@mui/material';
+// import { AppBar } from '@mui/material';
 import React from 'react';
 import './App.css';
-import ButtonAppBar from './AppBarw'
+import TitleAppBar from './AppBarw'
 
 
 function App() {
   return (
     <div className="App">
-<ButtonAppBar/>
+        <TitleAppBar/>
     </div>
   );
 }
