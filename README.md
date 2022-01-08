@@ -2,4 +2,4 @@
 
 ### Prizes Page:👇
 
-![image](https://user-images.githubusercontent.com/39950157/147785892-0122ad8c-3d73-477e-a684-379d2ef6fae5.png)
+![image](https://user-images.githubusercontent.com/39950157/148655786-3406e13c-63e0-403c-ac63-890ff697a9ca.png)
