@@ -7,4 +7,4 @@
 
 ### Payments Page:👇
 
-![image](https://user-images.githubusercontent.com/39950157/148660021-6a0b7c65-010e-46be-b8a3-b60026449422.png)
+![image](https://user-images.githubusercontent.com/39950157/148660065-4acc7edd-e04d-4943-b9fd-6265e3e0cba6.png)
