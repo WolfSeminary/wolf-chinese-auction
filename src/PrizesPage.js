@@ -1,4 +1,5 @@
 import ContinueToPayment from './ContinueToPayment'
+
 export default function PrizesPage() {
     return (
         <>
@@ -7,5 +8,5 @@ export default function PrizesPage() {
             <ContinueToPayment/>
             <NoticeModal/>
         </>
-    )
+    );
 }
