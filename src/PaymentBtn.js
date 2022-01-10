@@ -7,5 +7,5 @@ export default function PaymentBtn() {
             <Button variant="outlined" startIcon={<ArrowBackIosNewIcon />} color="secondary">
                 המשך לתשלום
             </Button>
-    )
+    );
 }
