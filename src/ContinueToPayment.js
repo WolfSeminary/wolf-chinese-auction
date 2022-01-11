@@ -4,7 +4,7 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 
 export default function PaymentBtn() {
     return (
-            <Button variant="outlined" startIcon={<ArrowBackIosNewIcon />} color="secondary">
+            <Button variant="outlined" startIcon={<ArrowBackIosNewIcon />} color="primary">
                 המשך לתשלום
             </Button>
     );
