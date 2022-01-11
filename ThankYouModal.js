@@ -19,7 +19,6 @@ export default () => {
                 <TextField id="outlined-basic" label="שם משפחה" variant="outlined" />
                 <TextField id="outlined-basic" label="שם פרטי" variant="outlined" />
             </Box>
-
         </>
     )
 }
