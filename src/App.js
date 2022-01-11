@@ -1,10 +1,7 @@
 
-// import { AppBar } from '@mui/material';
 import React from 'react';
 import './App.css';
-import TitleAppBar from './AppBarw'
-
-
+import TitleAppBar from './TitleAppBar'
 function App() {
   return (
     <div className="App">
@@ -12,5 +9,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
