@@ -1,6 +1,5 @@
- import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
-// import ThankYouModal from './ThankYouModal'
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
           Edit <code>src/App.js</code> and save to reload. Deploy-work!
         </p>
       </header>
-      {/* <ThankYouModal></ThankYouModal> */}
     </div>
   );
 }
