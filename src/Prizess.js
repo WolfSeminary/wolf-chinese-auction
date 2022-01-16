@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Prizes = () => {
+const Prizess = () => {
     const [prizes, setPrizes] = useState();
     const prizesInfoArray = [
 
