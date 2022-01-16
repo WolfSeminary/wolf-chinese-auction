@@ -3,7 +3,7 @@ import ContinueToPayment from './ContinueToPayment'
 export default function PrizesPage() {
     return (
         <>
-            <AppBar/>
+            <TitleAppBar/>
             <Prizes/>
             <ContinueToPayment/>
             <NoticeModal/>
