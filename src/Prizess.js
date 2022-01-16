@@ -91,4 +91,4 @@ const Prizess = () => {
     ]
     setPrizes(prizes = prizesInfoArray)
 }
-export default Prizes
+export default Prizess
