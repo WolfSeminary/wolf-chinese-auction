@@ -7,7 +7,7 @@ const Prizes = () => {
         {
             "PrizeID": "1",
             "prizeName": "חדר ילדים",
-            "prizeImage": "../../images/childrenRoom",
+            "prizeImage": "../../images/childrenRoom.png",
             "prizeDescription": "ארון, מיטה, שידה",
             "prizePrice": "20"
         },
@@ -21,14 +21,14 @@ const Prizes = () => {
         {
             "PrizeID": "3",
             "prizeName": "מייבש כביסה",
-            "prizeImage": "../../images/dryer",
+            "prizeImage": "../../images/dryer.png",
             "prizeDescription": " מייבש כביסה של חברת ZANUSSI",
             "prizePrice": "20"
         },
         {
             "PrizeID": "4",
             "prizeName": "עגלת תינוק",
-            "prizeImage": "../../images/babyStroller",
+            "prizeImage": "../../images/babyStroller.png",
             "prizeDescription": "עגלת שכיבה לתינוק",
             "prizePrice": "20"
         },
@@ -42,49 +42,49 @@ const Prizes = () => {
         {
             "PrizeID": "6",
             "prizeName": "1000₪ ביש",
-            "prizeImage": "../../images/yesh",
+            "prizeImage": "../../images/yesh.png",
             "prizeDescription": "שובר כספי לרשת יש",
             "prizePrice": "10"
         },
         {
             "PrizeID": "7",
             "prizeName": "1000₪ בקידישיק",
-            "prizeImage": "../../images/kidishik",
+            "prizeImage": "../../images/kidishik.png",
             "prizeDescription": "שובר כספי לרשת קידישיק",
             "prizePrice": "10"
         },
         {
             "PrizeID": "8",
             "prizeName": "1000₪ בבת של מלך",
-            "prizeImage": "../../images/batMelech",
+            "prizeImage": "../../images/batMelech.png",
             "prizeDescription": "שובר כספי לרשת בת מלך",
             "prizePrice": "10"
         },
         {
             "PrizeID": "9",
             "prizeName": "ערכת פליימוביל",
-            "prizeImage": "../../images/dollsHouse",
+            "prizeImage": "../../images/dollsHouse.png",
             "prizeDescription": "בית בובות ענק",
             "prizePrice": "5"
         },
         {
             "PrizeID": "10",
             "prizeName": "סט מצעים",
-            "prizeImage": "../../images/matzaim",
+            "prizeImage": "../../images/matzaim.png",
             "prizeDescription": "זוג מצעים מפואר",
             "prizePrice": "5"
         },
         {
             "PrizeID": "11",
             "prizeName": "אורגית",
-            "prizeImage": "../../images/organit",
+            "prizeImage": "../../images/organit.png",
             "prizeDescription": "אורגנית איכותית",
             "prizePrice": "5"
         },
         {
             "PrizeID": "12",
             "prizeName": "מחשב נייד",
-            "prizeImage": "../../images/laptop",
+            "prizeImage": "../../images/laptop.png",
             "prizeDescription": "מחשב נייד קומפקטי",
             "prizePrice": "5"
         }
