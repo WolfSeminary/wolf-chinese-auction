@@ -1,5 +1,5 @@
-const Checkbox = () => {
-    return (  <Checkbox {...label} /> );
-}
+import React from 'react'
+
+const Checkbox = () =>  <Checkbox {...label} />
  
 export default checkbox;
