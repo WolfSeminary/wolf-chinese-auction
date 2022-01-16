@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import SubmitButton from './Button';
+import SubmitButton from './SubmitButton';
+
 function App() {
   return (
     <div className="App">
-
-        <SubmitButton />
+      <SubmitButton />
     </div>
   );
 }
