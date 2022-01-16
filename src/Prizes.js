@@ -1,4 +1,4 @@
-import  React,  {useState} from 'react';
+import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 const Prizes = () => {
@@ -38,13 +38,13 @@ const Prizes = () => {
     return (<>
         <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 4, md: 8 }}>
-                {prizes.map((item, index) => (
-                    <Grid item xs={2} sm={4} md={4} key={index}>
+                {prizes.map((item) => (
+                    <Grid item xs={2} sm={4} md={4} key={item.ID}>
                         <Prize
-                        ID={item.ID}
-                        Name={item.Name}
-                        Description={item.Description}
-                        Price={item.Price}
+                            ID={item.ID}
+                            Name={item.Name}
+                            Description={item.Description}
+                            Price={item.Price}
                         />
                     </Grid>
                 ))}
