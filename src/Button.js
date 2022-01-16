@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 const BootstrapButton = styled(Button)({
     fontSize:17,margin:'auto',padding: '6px 12px'
 });
-export default function CustomizedButtons() {
+export default function SubmitButton() {
     return (
       <Stack spacing={2} direction="column" >
         <BootstrapButton variant="contained" disableRipple>
