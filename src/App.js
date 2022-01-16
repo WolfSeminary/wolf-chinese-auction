@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import SubmitButton from './SubmitButton';
 
 function App() {
   return (
     <div className="App">
-      <SubmitButton />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload. Deploy-work!
+        </p>
+      </header>
     </div>
   );
 }
