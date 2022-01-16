@@ -1,6 +1,7 @@
 import * as React from 'react';
-import {Table,TableBody,TableCell,TableContainer,TableHead,Paper,TableRow} from '@mui/material';
-function PricesTable() {
+import { Table, TableBody, TableCell, TableContainer, TableHead, Paper, TableRow } from '@mui/material';
+
+function PrizesTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -20,4 +21,5 @@ function PricesTable() {
     </TableContainer>
   );
 }
+
 export default PricesTable
