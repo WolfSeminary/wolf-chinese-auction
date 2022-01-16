@@ -1,15 +1,15 @@
-
-import { AppBar, Checkbox } from '@mui/material';
-import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import TitleAppBar from './AppBarw'
-
 
 function App() {
   return (
     <div className="App">
-
-<Checkbox/>   
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload. Deploy-work!
+        </p>
+      </header>
     </div>
   );
 }
