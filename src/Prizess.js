@@ -89,6 +89,6 @@ const Prizess = () => {
             "prizePrice": "5"
         }
     ]
-    setPrizes(prizes = prizesInfoArray)
+    setPrizes(prizesInfoArray)
 }
 export default Prizess
