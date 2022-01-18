@@ -13,9 +13,9 @@ const Prizess = () => {
         },
         {
             "PrizeID": "2",
-            "prizeName": "פאה",
-            "prizeImage": "<Image URL here>",
-            "prizeDescription": "פאת קסטם",
+            "prizeName": "חופשה זוגית",
+            "prizeImage": "../../images/hotel.png",
+            "prizeDescription": "חופשה זוגית בניר עציון resort",
             "prizePrice": "20"
         },
         {
@@ -34,9 +34,9 @@ const Prizess = () => {
         },
         {
             "PrizeID": "5",
-            "prizeName": "נעליים לכל המשפחה",
-            "prizeImage": "<Image URL here>",
-            "prizeDescription": "10 זוגות נעליים לכל המשפחה",
+            "prizeName": "מצלמה",
+            "prizeImage": "../../images/camera.png",
+            "prizeDescription": "מצלמת קנון יוקרתית",
             "prizePrice": "10"
         },
         {
