@@ -2,8 +2,9 @@ import * as React from 'react';
 import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import { isPropertySignature } from 'typescript';
 
-export default function NoticeModal() {
+export default function NoticeModal({onClose}) {
   const rootRef = React.useRef(null);
 
   return (
@@ -25,7 +26,8 @@ export default function NoticeModal() {
         disablePortal
         disableEnforceFocus
         disableAutoFocus
-        open
+        open={shouldShowNoticeModal}
+        onClose={onClose}
         aria-labelledby="server-modal-title"
         aria-describedby="server-modal-description"
         sx={{
