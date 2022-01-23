@@ -11,12 +11,6 @@ export default () => {
         key: 'muirtl',
         stylisPlugins: [rtlPlugin],
     });
-    let Fname, LName;
-    onCloseModal = (prizes,Fname, LName) => {
-        localStorage.setItem("UserFirstName", Fname);
-        localStorage.setItem("UserLastName", Lname);
-        localStorage.setItem("PrizesList", prizes.filter((p) => { if (p.selected) return p.Name; }))
-    }
     return (
         <div dir="rtl">
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -32,8 +26,8 @@ export default () => {
                     noValidate
                     autoComplete="off"
                 >
-                    <TextField id="outlined-basic" label="שם פרטי" variant="outlined" onChange={(e) => { fName = e.Target.value }} />
-                    <TextField id="outlined-basic" label="שם משפחה" variant="outlined" onChange={(e) => { LName = e.Target.value }} />
+                    <TextField id="outlined-basic" label="שם פרטי" variant="outlined" />
+                    <TextField id="outlined-basic" label="שם משפחה" variant="outlined" />
                 </Box>
 
             </CacheProvider>
