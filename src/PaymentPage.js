@@ -19,7 +19,7 @@ export default function PaymentPage() {
       <ButtonBackToGifts />
       <PricesTable />
       <TotalPrice />
-      {shouldShowThankYouModal && <ThankYouModal func={onCloseModal}/>}
+      {shouldShowThankYouModal && <ThankYouModal onCloseModal={onCloseModal}/>}
       <SubmitButton />
     </>
   );

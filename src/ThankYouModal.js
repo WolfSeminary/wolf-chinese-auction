@@ -13,25 +13,25 @@ export default (props) => {
         stylisPlugins: [rtlPlugin],
     });
     return (
-        <div dir="rtl">
+        <Modal dir="rtl" onClose={props.onCloseModal}>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 על מנת לשמור את נתוניך לצורך עריכת ההגרלות, נא הזן את הפרטים הבאים
             </Typography>
             <CacheProvider value={cacheRtl}>
-                <Modal onClose={props.onCloseModal}>
-                    <Box
-                        component="form"
-                        sx={{
-                            '& > :not(style)': { m: 1, width: '25ch' },
-                        }}
-                        noValidate
-                        autoComplete="off"
-                    >
-                        <TextField id="outlined-basic" label="שם פרטי" variant="outlined" />
-                        <TextField id="outlined-basic" label="שם משפחה" variant="outlined" />
-                    </Box>
-                </Modal>
+
+                <Box
+                    component="form"
+                    sx={{
+                        '& > :not(style)': { m: 1, width: '25ch' },
+                    }}
+                    noValidate
+                    autoComplete="off"
+                >
+                    <TextField id="outlined-basic" label="שם פרטי" variant="outlined" />
+                    <TextField id="outlined-basic" label="שם משפחה" variant="outlined" />
+                </Box>
+
             </CacheProvider>
-        </div>
+        </Modal>
     )
 }
