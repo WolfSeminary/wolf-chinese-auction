@@ -18,8 +18,7 @@ export default function ButtonBackToGifts() {
       }} >
         <ArrowBackIcon />בחזרה לבחירת המתנות
       </Button>
-      {shouldShowThankYouModal && <ThankYouModal onClose={onCloseModal} />}
-      {/* <Modal onClose={onCloseModal}/> */}
+      shouldShowThankYouModal && <ThankYouModal onClose={onCloseModal} />
     </>
   );
 }
