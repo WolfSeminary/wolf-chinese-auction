@@ -5,12 +5,15 @@ import NoticeModal from './NoticeModal';
 
 export default function PrizesPage() {
     const [shouldShowNoticeModal, setShouldShowNoticeModal] = useState(false);
+    function onCloseModal() {
+        setShouldShowNoticeModal(false)
+    }
     return (
         <>
-            <AppBar />
+            <TitleAppBar />
             <Prizes />
             <ContinueToPayment />
-            {shouldShowNoticeModal && <NoticeModal />}
+            {shouldShowNoticeModal && <NoticeModal onClose={onCloseModal} />}
         </>
     );
 }
