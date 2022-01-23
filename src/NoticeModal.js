@@ -6,9 +6,7 @@ import { useState } from 'react';
 
 export default function NoticeModal() {
   const rootRef = React.useRef(null);
- 
-  
-    return (
+     return (
       <Box
         sx={{
           height: 300,
