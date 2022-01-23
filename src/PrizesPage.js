@@ -10,7 +10,7 @@ export default function PrizesPage() {
             <AppBar />
             <Prizes />
             <ContinueToPayment />
-            {shouldShowNoticeModal && <NoticeModal />} 
+            {shouldShowNoticeModal && <NoticeModal />}
         </>
     );
 }
