@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Table, TableBody, TableCell, TableContainer, TableHead, Paper, TableRow } from '@mui/material';
 
-function PrizesTable() {
+function PricesTable(props) {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -12,9 +12,14 @@ function PrizesTable() {
         </TableHead>
         <TableBody>
           <TableRow>
-            <TableCell align="center">חדר ילדים</TableCell>
-            <TableCell align="center">3</TableCell>
-            <TableCell align="center">60</TableCell>
+            {props.map((item) => {
+              return (
+                <div key={item.PrizeID}>
+                  <TableCell align="center">{item.prizeName}</TableCell>
+                  <TableCell align="center"></TableCell>
+                  <TableCell align="center"></TableCell>
+                </div>)
+            })}
           </TableRow>
         </TableBody>
       </Table>
