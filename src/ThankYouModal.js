@@ -5,6 +5,7 @@ import TextField from '@mui/material/TextField';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
+import { Modal } from "@mui/material";
 
 export default (props) => {
     const cacheRtl = createCache({
@@ -17,20 +18,19 @@ export default (props) => {
                 על מנת לשמור את נתוניך לצורך עריכת ההגרלות, נא הזן את הפרטים הבאים
             </Typography>
             <CacheProvider value={cacheRtl}>
-                <Box
-                    component="form"
-                    sx={{
-                        '& > :not(style)': { m: 1, width: '25ch' },
-                    }}
-                    noValidate
-                    autoComplete="off"
-                >
-                    <div class="iconwrapper" onClick={props.func}>
-                        <CloseIcon />
-                    </div>
-                    <TextField id="outlined-basic" label="שם פרטי" variant="outlined" />
-                    <TextField id="outlined-basic" label="שם משפחה" variant="outlined" />
-                </Box>
+                <Modal onClose={props.onCloseModal}>
+                    <Box
+                        component="form"
+                        sx={{
+                            '& > :not(style)': { m: 1, width: '25ch' },
+                        }}
+                        noValidate
+                        autoComplete="off"
+                    >
+                        <TextField id="outlined-basic" label="שם פרטי" variant="outlined" />
+                        <TextField id="outlined-basic" label="שם משפחה" variant="outlined" />
+                    </Box>
+                </Modal>
             </CacheProvider>
         </div>
     )
