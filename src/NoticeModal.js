@@ -5,8 +5,8 @@ import Box from '@mui/material/Box';
 import { useState } from 'react';
 export default function MyNoticeModal() {
   const rootRef = React.useRef(null);
-  const [shouldShowNoticeModal, setShouldShowNoticeModal] = useState(false);
-  if (shouldShowNoticeModal) {
+ 
+  
     return (
       <Box
         sx={{
@@ -56,5 +56,5 @@ export default function MyNoticeModal() {
       </Box>
     );
   }
-}
+
 
