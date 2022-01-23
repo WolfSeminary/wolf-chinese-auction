@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 export default function ButtonBackToGifts() {
   let navigate = useNavigate();
   return (
-
     <Button variant="contained" disableElevation sx={{
       position: 'fixed',
       m: 0,
@@ -17,8 +16,6 @@ export default function ButtonBackToGifts() {
         navigate(`/prize_page`)}
     >
       <ArrowBackIcon />בחזרה לבחירת המתנות
-
     </Button>
   );
 }
-
