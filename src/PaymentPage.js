@@ -10,7 +10,7 @@ export default function ButtonBackToGifts() {
   }
   return (
     <>
-      <Button onClick="onSubmit()" variant="contained" disableElevation sx={{
+      <Button onClick="onSubmit" variant="contained" disableElevation sx={{
         position: 'fixed',
         m: 0,
         top: 10,
