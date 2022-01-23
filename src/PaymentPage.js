@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import {Button,Modal} from '@mui/material';
+import { Button } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ThankYouModal from './ThankYouModal'
 
 export default function ButtonBackToGifts() {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
- function onCloseModal(){
-    setShouldShowThankYouModal(false) 
+  function onCloseModal() {
+    setShouldShowThankYouModal(false)
   }
   return (
     <>
@@ -18,8 +18,8 @@ export default function ButtonBackToGifts() {
       }} >
         <ArrowBackIcon />בחזרה לבחירת המתנות
       </Button>
-      {shouldShowThankYouModal && <ThankYouModal />}
-      <Modal onClose={onCloseModal}/>
+      {shouldShowThankYouModal && <ThankYouModal onClose={onCloseModal} />}
+      {/* <Modal onClose={onCloseModal}/> */}
     </>
   );
 }
