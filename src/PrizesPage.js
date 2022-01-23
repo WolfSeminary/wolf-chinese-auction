@@ -2,7 +2,6 @@ import ContinueToPayment from './ContinueToPayment';
 import TitleAppBar from './TitleAppBar';
 import Prizes from './Prizes';
 import NoticeModal from './NoticeModal';
-import Modal from '@mui/material/Modal';
 import { useState } from 'react';
 
 export default function PrizesPage() {
@@ -14,8 +13,7 @@ export default function PrizesPage() {
             <TitleAppBar />
             <Prizes />
             <ContinueToPayment />
-            <NoticeModal />
-            <Modal onClose={onCloseModal} />
+            <NoticeModal onClose={onCloseModal} />
         </>
     );
 }
