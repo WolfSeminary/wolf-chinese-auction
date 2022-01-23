@@ -6,9 +6,10 @@ import { useNavigate } from 'react-router-dom';
 
 export default function PaymentPage() {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
-
+  function onCloseModal() {
+    setShouldShowThankYouModal(false)
+  }
   let navigate = useNavigate();
-
   let navigateToPrizes = () => {
     navigate(`/prize_page`)
   }
@@ -25,7 +26,7 @@ export default function PaymentPage() {
       }} >
         <ArrowBackIcon />בחזרה לבחירת המתנות
       </Button>
-      {shouldShowThankYouModal && <ThankYouModal />}
+      {shouldShowThankYouModal && <ThankYouModal onClose={onCloseModal} />}
     </>
   );
 }
