@@ -1,22 +1,31 @@
-import React, { useState } from 'react';
-import ButtonBackToGifts from './ButtonBackToGifts';
+import React, { useState} from 'react';
+import Button from '@mui/material/Button';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ThankYouModal from './ThankYouModal'
-import TitleAppBar from './TitleAppBar';
-import PricesTable from './PricesTable ';
-import TotalPrice from './TotalPrice';
-import SubmitButton from './SubmitButton';
+import { useNavigate } from 'react-router-dom';
 
 export default function PaymentPage() {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
 
+  let navigate = useNavigate();
+
+  let navigateToPrizes = () => {
+    navigate(`/prize_page`)
+  }
+  const onSubmit = () => {
+    setShouldShowThankYouModal(true);
+  }
   return (
     <>
-      <TitleAppBar />
-      <ButtonBackToGifts />
-      <PricesTable/>
-      <TotalPrice/>
+      <Button onClick={navigateToPrizes} variant="contained" disableElevation sx={{
+        position: 'fixed',
+        m: 0,
+        top: 10,
+        right: 10
+      }} >
+        <ArrowBackIcon />בחזרה לבחירת המתנות
+      </Button>
       {shouldShowThankYouModal && <ThankYouModal />}
-      <SubmitButton/>
     </>
   );
 }
