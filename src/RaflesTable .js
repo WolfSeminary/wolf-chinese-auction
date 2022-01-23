@@ -17,8 +17,6 @@ export default () => {
     }
     return (
         <>
-            <Winner winnerDetails={curentRaffle} />
-            <button onClick={onMakeRaffleClick}>eeeeeeeeeeeeeeeeeeeeee</button>
         </>
     )
 }
