@@ -5,9 +5,12 @@ import ThankYouModal from './ThankYouModal'
 
 export default function ButtonBackToGifts() {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
+  onSubmit=()=>{
+    setShouldShowThankYouModal(true);
+  }
   return (
     <>
-      <Button variant="contained" disableElevation sx={{
+      <Button onClick="onSubmit" variant="contained" disableElevation sx={{
         position: 'fixed',
         m: 0,
         top: 10,
