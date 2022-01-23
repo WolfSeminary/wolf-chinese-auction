@@ -22,7 +22,7 @@ export default function RaflesTable(props) {
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <Button variant="outlined" >!הגרל</Button>
-                        {props.prizes.map((prize) => { <TableCell align="center" prize={prize} key={prize.ID} /> })}
+                        {props.prizes.map((prize) => { return <TableCell align="center" prize={prize} key={prize.ID} /> })}
                     </TableRow>
                 </TableBody>
             </Table>
