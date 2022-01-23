@@ -4,12 +4,13 @@ import Prizes from './Prizes';
 import NoticeModal from './NoticeModal';
 
 export default function PrizesPage() {
+    const [shouldShowNoticeModal, setShouldShowNoticeModal] = useState(false);
     return (
         <>
-            <TitleAppBar/>
-            <Prizes/>
-            <ContinueToPayment/>
-            <NoticeModal/>
+            <AppBar />
+            <Prizes />
+            <ContinueToPayment />
+            {shouldShowNoticeModal && <NoticeModal />}
         </>
     );
 }
