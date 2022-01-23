@@ -1,4 +1,12 @@
-import React from 'react'
+import * as React from 'react';
+import Checkbox from '@mui/material/Checkbox';
 
-const Checkbox = () =>  <Checkbox {...label} />
-export default checkbox;
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+export default function Checkboxes() {
+    return (
+        <div>
+            <Checkbox {...label} />
+        </div>
+    );
+}
+
