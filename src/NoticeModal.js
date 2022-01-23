@@ -3,7 +3,8 @@ import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
-export default function MyNoticeModal() {
+
+export default function NoticeModal() {
   const rootRef = React.useRef(null);
  
   
