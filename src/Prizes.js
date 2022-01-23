@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-<<<<<<< HEAD
 import Prize from './Prize'
 import Checkbox from './Checkbox'
-=======
->>>>>>> origin/master
 
 const Prizes = () => {
     const [prizes, setPrizes] = useState(
@@ -16,11 +13,7 @@ const Prizes = () => {
                 // image:<Image URL here></Image>,
                 Description: "ארון עץ, מיטת נוער, שולחן",
                 Price: 30
-<<<<<<< HEAD
-            },
-=======
             }, 
->>>>>>> origin/master
             {
                 ID: 2,
                 Name: "חדר ילדים",
