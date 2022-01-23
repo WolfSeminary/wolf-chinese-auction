@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+
 const Prizes = () => {
     const [prizes, setPrizes] = useState(
         [
@@ -10,7 +11,7 @@ const Prizes = () => {
                 // image:<Image URL here></Image>,
                 Description: "ארון עץ, מיטת נוער, שולחן",
                 Price: 30
-            },
+            }, 
             {
                 ID: 2,
                 Name: "חדר ילדים",
