@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import { Button } from '@mui/material';
 import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ButtonBackToGifts from './ButtonBackToGifts';
 import ThankYouModal from './ThankYouModal'
+import TitleAppBar from './TitleAppBar';
+import PricesTable from './PricesTable ';
+import TotalPrice from './TotalPrice';
 
-export default function ButtonBackToGifts() {
+export default function PaymentPage() {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
   function onCloseModal() {
     setShouldShowThankYouModal(false)
@@ -23,6 +27,10 @@ export default function ButtonBackToGifts() {
         <ArrowBackIcon />בחזרה לבחירת המתנות
       </Button>
       {shouldShowThankYouModal && <ThankYouModal onClose={onCloseModal} />}
+      <TitleAppBar />
+      <ButtonBackToGifts />
+      <PricesTable/>
+      <TotalPrice/>
     </>
   );
 }
