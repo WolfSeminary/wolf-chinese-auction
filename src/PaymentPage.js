@@ -31,6 +31,7 @@ export default function PaymentPage() {
       <ButtonBackToGifts />
       <PricesTable/>
       <TotalPrice/>
+      
     </>
   );
 }
