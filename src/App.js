@@ -7,8 +7,9 @@ import PaymentPage from './PaymentPage';
 function App() {
   return (
     <Routes>
-      <Route path="/prize_page" element={<PrizesPage />} />
-      <Route path="/" element={<PaymentPage/>} />
+       <Route path="/PaymentPage" element={<PaymentPage />} />
+       <Route path="/prize_page" element={<PrizesPage />} />
+       <Route path="/" element={<PaymentPage/>} />
     </Routes> 
   );
 }
