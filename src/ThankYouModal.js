@@ -13,7 +13,7 @@ export default (props) => {
         stylisPlugins: [rtlPlugin],
     });
     return (
-        <Modal dir="rtl" onClose={props.onCloseModal}>
+        <Modal onClose={()=>props.onCloseModal(/*please set here all user info*/)}>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 על מנת לשמור את נתוניך לצורך עריכת ההגרלות, נא הזן את הפרטים הבאים
             </Typography>
