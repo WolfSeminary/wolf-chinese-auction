@@ -22,7 +22,7 @@ export default function RaflesTable() {
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <Button variant="outlined" >!הגרל</Button>
-                        {/* <TableCell align="center">פריט</TableCell> */}
+                        <TableCell align="center">פריט</TableCell>
                     </TableRow>
                 </TableBody>
             </Table>
