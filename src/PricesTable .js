@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Table, TableBody, TableCell, TableContainer, TableHead, Paper, TableRow } from '@mui/material';
+import { Table, TableBody, TableCell, TableContainer, TableHead, Paper, TableRow, TableSortLabel } from '@mui/material';
 
 function PricesTable(props) {
   return (
@@ -15,7 +15,14 @@ function PricesTable(props) {
             {props.map((item) => {
               return (
                 <div key={item.PrizeID}>
-                  <TableCell align="center">{item.prizeName}</TableCell>
+                   <TableSortLabel
+                  // active={props.sortBy === "bmonth"}
+                  direction={'asc'}
+                  // onClick={props.requestSort("bmonth")}
+                >
+                  Born in
+                </TableSortLabel>
+                  {/* <TableCell align="center" direction={"asc"}>{item.prizeName}</TableCell> */}
                   <TableCell align="center"></TableCell>
                   <TableCell align="center"></TableCell>
                 </div>)
