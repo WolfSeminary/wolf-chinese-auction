@@ -16,8 +16,8 @@ function PricesTable(props) {
               return (
                 <div key={item.PrizeID}>
                   <TableCell align="center">{item.prizeName}</TableCell>
-                  <TableCell align="center"></TableCell>
-                  <TableCell align="center">{item.prizePrice}</TableCell>
+                  <TableCell align="center">{isSelected}</TableCell>
+                  <TableCell align="center">{item.prizePrice*isSelected }</TableCell>
                 </div>)
             })}
           </TableRow>
