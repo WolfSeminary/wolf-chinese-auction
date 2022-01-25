@@ -22,8 +22,10 @@ export default function NoticeModal() {
           disablePortal
           disableEnforceFocus
           disableAutoFocus
-          open={shouldShowNoticeModal}
-          onClose={onClose}
+          // open={shouldShowNoticeModal}
+          // onClose={onClose}
+          open={true}
+          // onClose={onClose}
           aria-labelledby="server-modal-title"
           aria-describedby="server-modal-description"
           sx={{

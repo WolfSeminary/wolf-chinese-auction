@@ -5,6 +5,8 @@ import Prize from './Prize'
 import Checkbox from './Checkbox'
 
 const Prizes = () => {
+    const []=useState();
+    const [selectedCategory, setSelectedCategory] = useState("")
     const [prizes, setPrizes] = useState(
         [
 

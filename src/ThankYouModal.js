@@ -5,6 +5,7 @@ import TextField from '@mui/material/TextField';
 import rtlPlugin from 'stylis-plugin-rtl';
 import { CacheProvider } from '@emotion/react';
 import createCache from '@emotion/cache';
+import { Modal } from "@mui/material";
 
 export default () => {
     const cacheRtl = createCache({
@@ -12,7 +13,8 @@ export default () => {
         stylisPlugins: [rtlPlugin],
     });
     return (
-        <Modal dir="rtl" onClose={props.onClose}>
+        // <Modal dir="rtl" onClose={props.onClose}>
+        <Modal dir="rtl">
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 על מנת לשמור את נתוניך לצורך עריכת ההגרלות, נא הזן את הפרטים הבאים
             </Typography>
