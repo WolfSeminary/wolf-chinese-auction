@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Box, TextField, Typography } from '@mui/material';
 
-export default function Winner() {
+export default function Winner(props) {
     return (
         <>
-            <Typography>":והזוכה בהגרלת ---- הוא"</Typography>
+            <Typography>"{props.winnerDetails.userName} :והזוכה בהגרלת{props.winnerDetails.prizeName}הוא"</Typography>
             <Box
                 component="form"
                 sx={{

@@ -8,9 +8,12 @@ const BootstrapButton = styled(Button)({
 });
 
 export default function SubmitButton() {
+  const onSubmit = () => {
+    setShouldShowThankYouModal(true);
+  }
   return (
     <Stack spacing={2} direction="column" >
-      <BootstrapButton variant="contained" disableRipple>
+      <BootstrapButton onSubmit={onSubmit} variant="contained" disableRipple>
         אשר הכנסת סכום מדויק לתשלום בקופות הייעודיות
       </BootstrapButton>
       👇
