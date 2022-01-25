@@ -12,12 +12,12 @@ function PricesTable(props) {
         </TableHead>
         <TableBody>
           <TableRow>
-            {props.map((item) => {
+            {props.prizes.map((item) => {
               return (
                 <div key={item.PrizeID}>
                   <TableCell align="center">{item.prizeName}</TableCell>
                   <TableCell align="center"></TableCell>
-                  <TableCell align="center"></TableCell>
+                  <TableCell align="center">{item.prizePrice}</TableCell>
                 </div>)
             })}
           </TableRow>
