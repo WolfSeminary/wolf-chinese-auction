@@ -6,12 +6,12 @@ import PricesTable from './PricesTable ';
 import TotalPrice from './TotalPrice';
 import SubmitButton from './SubmitButton';
 
-export default function PaymentPage() {
+export default function PaymentPage(props) {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
-  const onCloseModal = ( FName, LName,prizes) => {
+  const onCloseModal = (FName, LName) => {
     localStorage.setItem("UserFirstName", FName);
     localStorage.setItem("UserLastName", LName);
-    localStorage.setItem("PrizesList", prizes.filter((p) => { if (p.selected) return p.Name; }))
+    localStorage.setItem("PrizesList", props.prizes.filter((p) => { if (p.isSelected) return p.Name; }))
   }
   return (
     <>
