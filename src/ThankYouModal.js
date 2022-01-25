@@ -8,12 +8,14 @@ import createCache from '@emotion/cache';
 import { Modal } from "@mui/material";
 
 export default (props) => {
+    const [userFirstName , setUserFirstName] = useState('') 
+    const [userLastName , setUserLastName] = useState('') 
     const cacheRtl = createCache({
         key: 'muirtl',
         stylisPlugins: [rtlPlugin],
     });
     return (
-        <Modal onClose={()=>props.onCloseModal(/*please set here all user info*/)}>
+        <Modal onClose={()=>props.onCloseModal(userFirstName,userLastName)}>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                 על מנת לשמור את נתוניך לצורך עריכת ההגרלות, נא הזן את הפרטים הבאים
             </Typography>
@@ -27,8 +29,8 @@ export default (props) => {
                     noValidate
                     autoComplete="off"
                 >
-                    <TextField id="outlined-basic" label="שם פרטי" variant="outlined" />
-                    <TextField id="outlined-basic" label="שם משפחה" variant="outlined" />
+                    <TextField id="outlined-basic" label="שם פרטי" variant="outlined" value={userFirstName} />
+                    <TextField id="outlined-basic" label="שם משפחה" variant="outlined" value={userLastName} />
                 </Box>
 
             </CacheProvider>

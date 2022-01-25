@@ -8,7 +8,7 @@ import SubmitButton from './SubmitButton';
 
 export default function PaymentPage() {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
-  const onCloseModal = (prizes, FName, LName) => {
+  const onCloseModal = ( FName, LName,prizes) => {
     localStorage.setItem("UserFirstName", FName);
     localStorage.setItem("UserLastName", LName);
     localStorage.setItem("PrizesList", prizes.filter((p) => { if (p.selected) return p.Name; }))
