@@ -4,7 +4,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ThankYouModal from './ThankYouModal'
 import { useNavigate } from 'react-router-dom';
 
-export default function PaymentPage() {
+export default function PaymentPage(prizes) {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
   function onCloseModal() {
     setShouldShowThankYouModal(false)
