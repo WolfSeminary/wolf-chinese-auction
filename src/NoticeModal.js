@@ -3,7 +3,7 @@ import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-export default function NoticeModal() {
+export default function NoticeModal(props) {
   const rootRef = React.useRef(null);
      return (
       <Box
@@ -22,8 +22,8 @@ export default function NoticeModal() {
           disablePortal
           disableEnforceFocus
           disableAutoFocus
-          open={shouldShowNoticeModal}
-          onClose={onClose}
+          open
+          onClose={props.onClose}
           aria-labelledby="server-modal-title"
           aria-describedby="server-modal-description"
           sx={{

@@ -12,7 +12,7 @@ export default function TitleAppBar() {
           ברוכים הבאים למכירת החסד של סמינר וולף
           <p style={{ margin: '0px' }}>מפעל הבית</p>
         </Typography>
-        <PrizesSum/>סך מתנות
+        <PrizesSum /><p>סך מתנות</p> 
       </Toolbar>
     </AppBar>
   );

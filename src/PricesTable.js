@@ -12,7 +12,7 @@ function PricesTable(props) {
         </TableHead>
         <TableBody>
           <TableRow>
-            {props.map((item) => {
+            {props.prizes.map((item) => {
               return (
                 <div key={item.PrizeID}>
                   <TableCell align="center">{item.prizeName}</TableCell>

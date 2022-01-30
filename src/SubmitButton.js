@@ -7,9 +7,9 @@ const BootstrapButton = styled(Button)({
   fontSize: 17, margin: 'auto', padding: '6px 12px'
 });
 
-export default function SubmitButton() {
+export default function SubmitButton({setShouldShow}) {
   const onSubmit = () => {
-    setShouldShowThankYouModal(true);
+    setShouldShow(true)
   }
   return (
     <Stack spacing={2} direction="column" >

@@ -2,7 +2,11 @@ import React, { useState} from 'react';
 import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ThankYouModal from './ThankYouModal'
-
+import TitleAppBar from './TitleAppBar';
+import ButtonBackToGifts from './ButtonBackToGifts';
+import TotalPrice from './TotalPrice';
+import PricesTable from './PricesTable';
+import SubmitButton from './SubmitButton';
 export default function PaymentPage(props) {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
   const onCloseModal = (FName, LName) => {
@@ -15,10 +19,10 @@ export default function PaymentPage(props) {
     <>
       <TitleAppBar />
       <ButtonBackToGifts />
-      <PricesTable />
+      <PricesTable prizes = {props.prizes}/>
       <TotalPrice />
       {shouldShowThankYouModal && <ThankYouModal onCloseModal={onCloseModal}/>}
-      <SubmitButton />
+      <SubmitButton setShouldShow = {setShouldShowThankYouModal}/>
     </>
   );
 }

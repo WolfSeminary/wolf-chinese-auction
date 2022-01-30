@@ -1,10 +1,16 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+import React, { useState } from 'react';
+import { Card, CardContent, CardMedia, Typography, Checkbox } from '@mui/material';
+import PrizesSum from './PrizesSum';
 
 export default function PrizeItem(props) {
+   const [selectedCategory, setSelectedCategory] = useState(props.isSelected);
+    const onSelectedPrizeChange = (e) => {
+        setSelectedCategory(e.target.checked)
+        if (e.value)
+        setNumOfSelectedPrizes(numOfSelectedPrizes + 1);
+        if (!e.value)
+        setNumOfSelectedPrizes(numOfSelectedPrizes - 1);
+    }
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -24,6 +30,7 @@ export default function PrizeItem(props) {
           {props.Price}
         </Typography>
       </CardContent>
+      <Checkbox onChange={onSelectedPrizeChange} />
     </Card>
   );
 }

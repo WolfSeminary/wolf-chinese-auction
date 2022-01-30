@@ -4,15 +4,18 @@ import Prizes from './Prizes';
 import NoticeModal from './NoticeModal';
 import { useState } from 'react';
 
-export default function PrizesPage() {
+export default function PrizesPage(props) {
     const [shouldShowNoticeModal, setShouldShowNoticeModal] = useState(false);
-    function onCloseModal() {
+    const [numOfSelectedPrizes, setNumOfSelectedPrizes] = useState(0)
+    const onCloseModal = () => {
         setShouldShowNoticeModal(false)
     }
     return (
         <>
             <TitleAppBar />
-            <Prizes />
+            <Prizes
+                prizes={props.prizes}
+                numOfSelectedPrizes={numOfSelectedPrizes} />
             <ContinueToPayment />
             {shouldShowNoticeModal && <NoticeModal onClose={onCloseModal} />}
         </>
