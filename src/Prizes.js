@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Prize from './Prize'
 import Checkbox from './Checkbox'
+import PaymentPage from './PaymentPage';
 
 const Prizes = () => {
     const [prizes, setPrizes] = useState(
@@ -131,6 +132,7 @@ const Prizes = () => {
                 ))}
             </Grid>
         </Box>
+        <PaymentPage prizes={prizes}/>
     </>);
 }
 
