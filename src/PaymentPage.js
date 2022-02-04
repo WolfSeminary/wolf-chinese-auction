@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ThankYouModal from './ThankYouModal'
 
-export default function PaymentPage() {
+export default function BackToGifts() {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
   const navigate = useNavigate();
   const navigateToPrizes = () => {
