@@ -5,14 +5,10 @@ import ThankYouModal from './ThankYouModal'
 
 export default function PaymentPage() {
   const [shouldShowThankYouModal, setShouldShowThankYouModal] = useState(false)
-
-  let navigate = useNavigate();
-
-  let navigateToPrizes = () => {
+  const navigate = useNavigate();
+  const navigateToPrizes = () => {
     navigate(`/prize_page`)
   }
-
-
 
   onSubmit = () => {
     setShouldShowThankYouModal(true);
