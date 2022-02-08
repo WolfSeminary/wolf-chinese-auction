@@ -1,7 +1,15 @@
-import * as React from 'react';
-import { Table, TableBody, TableCell, TableContainer, TableHead, Paper, TableRow } from '@mui/material';
+import React from "react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  Paper,
+  TableRow,
+} from "@mui/material";
 
-function PricesTable(props) {
+export default function PricesTable(props) {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -12,13 +20,14 @@ function PricesTable(props) {
         </TableHead>
         <TableBody>
           <TableRow>
-            {props.map((item) => {
+            {props.prizes?.map((item) => {
               return (
                 <div key={item.PrizeID}>
                   <TableCell align="center">{item.prizeName}</TableCell>
                   <TableCell align="center"></TableCell>
                   <TableCell align="center"></TableCell>
-                </div>)
+                </div>
+              );
             })}
           </TableRow>
         </TableBody>
@@ -26,5 +35,3 @@ function PricesTable(props) {
     </TableContainer>
   );
 }
-
-export default PricesTable

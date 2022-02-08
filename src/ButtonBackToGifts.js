@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 export default function ButtonBackToGifts() {
   let navigate = useNavigate();
   let navigateToPrizes = () => {
-    navigate(`/prize_page`)
+    navigate(`/Prizes`)
   }
   return (
     <>

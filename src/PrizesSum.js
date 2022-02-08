@@ -1,5 +1,5 @@
 
-import * as React from 'react';
+import React from 'react';
 import Badge from '@mui/material/Badge';
 import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 
