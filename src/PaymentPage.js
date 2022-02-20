@@ -21,7 +21,7 @@ export default function PaymentPage(props) {
     <>
       <TitleAppBar />
       <ButtonBackToGifts />
-      <PrizesTable />
+      <PrizesTable prizes={props.prizes} />
       <TotalPrice />
       {shouldShowThankYouModal && <ThankYouModal onCloseModal={onCloseModal} />}
       <SubmitButton />
