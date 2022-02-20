@@ -24,8 +24,10 @@ export default function PrizesTable(props) {
               return (
                 <div key={item.PrizeID}>
                   <TableCell align="center">{item.prizeName}</TableCell>
-                  <TableCell align="center"></TableCell>
-                  <TableCell align="center"></TableCell>
+                  <TableCell align="center">{item.isSelected}</TableCell>
+                  <TableCell align="center">
+                    {item.prizePrice * item.isSelected}
+                  </TableCell>
                 </div>
               );
             })}
