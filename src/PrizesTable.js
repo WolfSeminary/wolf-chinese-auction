@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Table,
   TableBody,
@@ -10,6 +10,10 @@ import {
 } from "@mui/material";
 
 export default function PrizesTable(props) {
+  const [prizes, setPrizes] = useState(
+    props.prizes.filter((p) => p.isSelected)
+  );
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -20,7 +24,7 @@ export default function PrizesTable(props) {
         </TableHead>
         <TableBody>
           <TableRow>
-            {props.prizes?.map((item) => {
+            {prizes?.map((item) => {
               return (
                 <div key={item.PrizeID}>
                   <TableCell align="center">{item.prizeName}</TableCell>
