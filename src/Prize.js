@@ -10,11 +10,11 @@ import {
 export default function PrizeItem(props) {
   const onSelectedPrizeChange = (e) => {
     let isChecked = e.target.checked;
-    props.changeSelectedPrize(props.Id);
+    props.changeSelectedPrize(props.ID);
     const valueToAdd = isChecked ? 1 : -1;
     props.setNumOfSelectedPrizes(props.numOfSelectedPrizes + valueToAdd);
   };
-
+  
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia component="img" height="140" image={props.Image} alt="" />

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ThankYouModal from "./ThankYouModal";
 import TitleAppBar from "./TitleAppBar";
 import ButtonBackToGifts from "./ButtonBackToGifts";
-import PricesTable from "./PricesTable";
+import PrizesTable from "./PrizesTable";
 import TotalPrice from "./TotalPrice";
 import SubmitButton from "./SubmitButton";
 
@@ -21,7 +21,7 @@ export default function PaymentPage(props) {
     <>
       <TitleAppBar />
       <ButtonBackToGifts />
-      <PricesTable />
+      <PrizesTable />
       <TotalPrice />
       {shouldShowThankYouModal && <ThankYouModal onCloseModal={onCloseModal} />}
       <SubmitButton />

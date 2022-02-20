@@ -9,7 +9,7 @@ import {
   TableRow,
 } from "@mui/material";
 
-export default function PricesTable(props) {
+export default function PrizesTable(props) {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">

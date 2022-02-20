@@ -6,18 +6,28 @@ import { useState } from "react";
 
 export default function PrizesPage({ prizes }) {
   const [shouldShowNoticeModal, setShouldShowNoticeModal] = useState(false);
+  const [numOfSelectedPrizes, setNumOfSelectedPrizes] = useState(0);
+
   function onCloseModal() {
     setShouldShowNoticeModal(false);
   }
+
   return (
     <>
-      <TitleAppBar />
-      <Prizes prizes={prizes} />
-      <ContinueToPayment />
-      <NoticeModal
-        shouldShowNoticeModal={shouldShowNoticeModal}
-        onClose={onCloseModal}
+      <TitleAppBar numOfSelectedPrizes={numOfSelectedPrizes} />
+      <Prizes
+        prizes={prizes}
+        numOfSelectedPrizes={numOfSelectedPrizes}
+        setNumOfSelectedPrizes={setNumOfSelectedPrizes}
+        setShouldShowNoticeModal={setShouldShowNoticeModal}
       />
+      <ContinueToPayment />
+      {shouldShowNoticeModal && (
+        <NoticeModal
+          shouldShowNoticeModal={shouldShowNoticeModal}
+          onClose={onCloseModal}
+        />
+      )}
     </>
   );
 }

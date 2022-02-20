@@ -20,6 +20,12 @@ export default function ThankYouModal(props) {
       dir="rtl"
       onClose={() => props.onCloseModal(userFirstName, userLastName)}
     >
+      <Typography id="modal-modal-title" variant="h6" component="h2">
+        תזכו למצוות!
+      </Typography>
+      <Typography id="server-modal-description" sx={{ pt: 2 }}>
+        יישר כוח על השתתפותכם בהחזקת מפעל הבית של סמינר וולף
+      </Typography>
       <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
         על מנת לשמור את נתוניך לצורך עריכת ההגרלות, נא הזן את הפרטים הבאים
       </Typography>

@@ -13,20 +13,12 @@ export default function NoticeModal(props) {
         flexGrow: 1,
         minWidth: 300,
         transform: "translateZ(0)",
-        "@media all and (-ms-high-contrast: none)": {
-          display: "none",
-        },
       }}
       ref={rootRef}
     >
       <Modal
-        disablePortal
-        disableEnforceFocus
-        disableAutoFocus
-        open={props.shouldShowNoticeModal}
+        open
         onClose={props.onClose}
-        aria-labelledby="server-modal-title"
-        aria-describedby="server-modal-description"
         sx={{
           display: "flex",
           p: 1,
